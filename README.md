@@ -2,7 +2,6 @@
 
 This project presents a full relational database design for a music streaming service platform. It includes an Entity-Relationship Diagram (ERD), business rules, normalization, and SQL DDL scripts implemented in Oracle. The system supports both free and premium users, music libraries, playlists, listening history, and artist/album/song management.
 
----
 
 ## 📌 Project Summary
 
@@ -12,7 +11,6 @@ The platform is designed to allow users to discover, stream, and organize music.
 
 Users can maintain personal libraries and playlists, access a wide collection of songs and albums, and track interactions like plays and modifications via listening history.
 
----
 
 ## 🧩 Entity Relationship Model
 
@@ -27,7 +25,6 @@ Users can maintain personal libraries and playlists, access a wide collection of
 - **UserSong** and **PlaylistSong**: M:N resolving entities
 - **Referrer (Recursive Relationship)**: A user can refer another user (self-referencing)
 
----
 
 ## 📐 Business Rules
 
@@ -39,7 +36,6 @@ Users can maintain personal libraries and playlists, access a wide collection of
 - An `Album` is created by one `Artist`
 - Each `User` may refer another user (1:M recursive)
 
----
 
 ## 🛠 DDL Implementation (Oracle)
 
@@ -51,7 +47,6 @@ The project is fully implemented in Oracle SQL Developer. Key features:
 - Subtypes managed via foreign key inheritance
 - Normalized table structures
 
----
 
 ## 🔄 CRUD Capabilities
 
@@ -63,7 +58,6 @@ Example queries implemented:
 - Average duration and most recent release by genre
 - Song duration variability analysis
 
----
 
 ## 📸 Diagrams
 
@@ -73,7 +67,6 @@ Example queries implemented:
 ### Relational Schema Diagram
 ![Relational Diagram](relational.png)
 
----
 
 ## 🧬 Tables Overview
 
@@ -91,11 +84,9 @@ Example queries implemented:
 | `History`      | Logs user interaction with the app     |
 | `Subscription` | User subscription details              |
 
----
 
 ## 📬 Author
 
 Luka Trunić
 
----
 
